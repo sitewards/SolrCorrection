@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ *
+ * @category    Sitewards
+ * @package     Sitewards_SolrCorrection
+ * @copyright   Copyright (c) 2013 Sitewards GmbH (http://www.sitewards.com/)
+ * @contact     magento@sitewards.com
+ * @licence     OSL-3.0
+ */
+ -->
+<config>
+	<modules>
+		<Sitewards_SolrCorrection>
+			<version>1.0.0</version>
+		</Sitewards_SolrCorrection>
+	</modules>
+	<global>
+		<models>
+			<solrcorrection>
+				<class>Sitewards_SolrCorrection_Model</class>
+			</solrcorrection>
+		</models>
+		<events>
+			<sitewards_solr_search_interface>
+				<observers>
+					<sitewards_solrcorrection>
+						<class>Sitewards_SolrCorrection_Model_Observer</class>
+						<method>autoCorrectSearch</method>
+					</sitewards_solrcorrection>
+				</observers>
+			</sitewards_solr_search_interface>
+		</events>
+	</global>
+</config>

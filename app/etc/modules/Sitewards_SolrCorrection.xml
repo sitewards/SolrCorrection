@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category    Sitewards
+ * @package     Sitewards_SolrCorrection
+ * @copyright   Copyright (c) 2013 Sitewards GmbH (http://www.sitewards.com/)
+ * @contact     magento@sitewards.com
+ * @licence     OSL-3.0
+ */
+ -->
+<config>
+	<modules>
+		<Sitewards_SolrCorrection>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Sitewards_SolrCore />
+			</depends>
+		</Sitewards_SolrCorrection>
+	</modules>
+</config>
